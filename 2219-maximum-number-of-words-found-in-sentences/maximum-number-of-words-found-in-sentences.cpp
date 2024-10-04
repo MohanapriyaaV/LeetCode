@@ -5,7 +5,7 @@ public:
         int count = 0 , maxLen = 0;
         for(int i=0;i<sentences.size();i++)
         {
-           count = 0;
+           count = 1;
             for(int j=0;j<sentences[i].size();j++)
             {
                 if(sentences[i][j] == ' ')
@@ -15,6 +15,6 @@ public:
             }
            maxLen = max(count , maxLen);
         }
-        return maxLen+1;
+        return maxLen;
     }
 };
