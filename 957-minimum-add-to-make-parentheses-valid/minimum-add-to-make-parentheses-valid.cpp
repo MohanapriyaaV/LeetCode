@@ -16,3 +16,15 @@ public:
         return c + S.size();
     }
 };
+// class Solution {
+// public:
+//     int minAddToMakeValid(string s)
+//     {
+//         unordered_map<char,int> map;
+//         for(auto c:s) map[c]++;
+//         int f1 = map['('];
+//         int f2 = map[')'];
+//         return abs(f1-f2);
+//     }
+
+// };
